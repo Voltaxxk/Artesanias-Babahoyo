@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities.css" layer(utilities);
+
+.testComponent{
+    @apply bg-accent-500;
+}
+/* .mainNavigation {
+    @apply bg-accent-500 ;
+} */

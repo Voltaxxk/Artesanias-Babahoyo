@@ -1,15 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Playfair_Display, Pacifico, Lato } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const playFair = Playfair_Display({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-playFairD",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const pacifico = Pacifico({
   subsets: ["latin"],
+  display: "swap",
+  weight: ["400"],
+  variable: "--font-pacifico",
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  variable: "--font-lato",
 });
 
 export const metadata: Metadata = {
@@ -23,9 +33,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+    <html lang="es">
+      <body className={`${playFair.variable} ${pacifico.variable} ${lato.variable}`}>
+        <main className="container mx-auto">
+          {children}
+        </main>
       </body>
     </html>
   );
