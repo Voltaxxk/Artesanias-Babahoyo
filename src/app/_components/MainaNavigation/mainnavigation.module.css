@@ -1,8 +1,24 @@
-@import "tailwindcss";
-@import "tailwindcss/utilities.css" layer(utilities);
+@reference "tailwindcss";
+@reference "../../globals.css";
 
-.testComponent{
-    @apply bg-accent-500;
+.mainNavigation__Desktop {
+    @apply flex items-center justify-between
+}
+
+.logoContainer {
+    @apply flex items-center
+}
+
+.navigationLogo {
+    @apply w-20 h-auto
+}
+
+.textoLogo{
+    @apply font-pacifico text-2xl text-brand-600 font-bold
+}
+
+.navigationItems{
+    @apply flex gap-x-5 ;
 }
 /* .mainNavigation {
     @apply bg-accent-500 ;

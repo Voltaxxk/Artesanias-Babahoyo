@@ -34,8 +34,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${playFair.variable} ${pacifico.variable} ${lato.variable}`}>
-        <main className="container mx-auto">
+      <body className={`${playFair.variable} ${pacifico.variable} ${lato.variable} antialiased`}>
+        <main className="container mx-auto py-5">
           {children}
         </main>
       </body>

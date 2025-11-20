@@ -1,0 +1,6 @@
+@reference "tailwindcss";
+@reference "../../globals.css";
+
+.heroContainer {
+    @apply  object-cover object-center
+}
