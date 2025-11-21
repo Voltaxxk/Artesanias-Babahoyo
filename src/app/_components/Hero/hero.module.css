@@ -1,6 +1,32 @@
 @reference "tailwindcss";
 @reference "../../globals.css";
 
+
 .heroContainer {
-    @apply  object-cover object-center
+    @apply relative h-[72vh] w-full p-10  object-cover;
+}
+
+
+.bgImageContainer {
+    @apply absolute inset-0 -z-10;
+}
+
+.bgGradient {
+    @apply absolute inset-0 -z-5;
+}  
+
+.textContainer{
+    @apply flex h-full items-center text-white;
+}
+
+.infoContainer{
+    @apply basis-1/2 text-balance flex flex-col gap-y-5
+}
+
+.descrptionText{
+    @apply text-xl md:text-2xl mb-8 leading-relaxed text-amber-100
+}
+
+.ctasContainer{
+    @apply flex gap-x-5
 }

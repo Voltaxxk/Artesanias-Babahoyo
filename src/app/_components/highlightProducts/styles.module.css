@@ -1,0 +1,8 @@
+@reference "tailwindcss";
+@reference "../../globals.css";
+
+
+
+.highlightProductsContainer {
+    @apply py-20 bg-gradient-to-br from-amber-50 to-orange-50;
+}

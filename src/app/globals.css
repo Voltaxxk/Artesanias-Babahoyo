@@ -138,8 +138,38 @@
 
     }
   body {
-    @apply bg-background text-foreground;    
+    @apply bg-background text-foreground font-lato;    
 
     }    
+
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-playFairD;      
+
+      } 
+
+    h1 {
+        @apply text-4xl md:text-5xl lg:text-6xl font-bold;        
+    }
+
+    h2 {
+        @apply text-3xl md:text-4xl lg:text-4xl font-bold;
+    }
+
+    h3 {
+        @apply text-xl md:text-2xl lg:text-2xl font-semibold;
+    }
+
+    h4 {
+        @apply text-lg md:text-xl lg:text-xl font-semibold;
+    }
+
+    h5 {
+        @apply text-base md:text-lg lg:text-lg font-medium;
+    }
+
+    h6 {
+        @apply text-sm md:text-base lg:text-base font-medium;
+    }
+      
 
 }
