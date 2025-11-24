@@ -10,7 +10,7 @@ const Hero = () => {
         </div>
         <div className={styles.bgGradient}
             style={{
-                background: "linear-gradient(180deg, rgba(120, 53, 15, 10.7), rgba(180, 83, 9, 0.7))",
+                background: "linear-gradient(180deg, rgba(120, 53, 15, 0.5), rgba(180, 83, 9, 0.7))",
             }}
             aria-hidden="true"
       />
